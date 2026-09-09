@@ -8,7 +8,8 @@ import csv, random, os
 from datetime import datetime, timedelta
 
 random.seed(42)
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "source_data")
+CATALOG = "retail_lakehouse"   # or whatever you passed to the setup notebooks
+OUT = f"/Volumes/{CATALOG}/landing/source_files"
 os.makedirs(OUT, exist_ok=True)
 
 FIRST = ["Aiden","Bella","Chen","Divya","Ethan","Fatima","George","Hana","Isaac","Jia",
@@ -39,12 +40,15 @@ def ts(d): return d.strftime("%Y-%m-%d %H:%M:%S")
 def dt(d): return d.strftime("%Y-%m-%d")
 
 def write(name, header, rows):
-    path = os.path.join(OUT, name)
+    entity = name.replace(".csv", "")
+    folder = os.path.join(OUT, entity)
+    os.makedirs(folder, exist_ok=True)
+    path = os.path.join(folder, name)
     with open(path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(header)
         w.writerows(rows)
-    print(f"{name:28s} {len(rows):>6,} records")
+    print(f"{name:28s} {len(rows):>6,} records -> {path}")
 
 # ---------------- 1. customers.csv (1,200 + dirty) ----------------
 customers = []
