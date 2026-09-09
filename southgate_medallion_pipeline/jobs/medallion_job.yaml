@@ -1,0 +1,114 @@
+name: retail_medallion_pipeline
+description: >-
+  Metadata-driven medallion pipeline: Auto Loader bronze -> conformed silver ->
+  gold aggregates -> materialized view refresh. Audit + error logging in
+  retail_lakehouse.ops.
+
+email_notifications:
+  on_failure:
+    - your.email@company.com
+  no_alert_for_skipped_runs: true
+
+notification_settings:
+  no_alert_for_canceled_runs: true
+
+schedule:
+  quartz_cron_expression: "0 0 5 * * ?"
+  timezone_id: Australia/Melbourne
+  pause_status: PAUSED
+
+max_concurrent_runs: 1
+timeout_seconds: 7200
+
+parameters:
+  - name: catalog
+    default: retail_lakehouse
+  - name: entity_filter
+    default: "*"
+
+tasks:
+  - task_key: refresh_metadata
+    description: Re-apply pipeline metadata config (idempotent MERGE)
+    notebook_task:
+      notebook_path: /Workspace/medallion_pipeline/setup/01_create_metadata_table
+      base_parameters:
+        catalog: "{{job.parameters.catalog}}"
+    timeout_seconds: 600
+    max_retries: 1
+
+  - task_key: bronze_ingestion
+    depends_on:
+      - task_key: refresh_metadata
+    description: Auto Loader ingestion for all active entities
+    notebook_task:
+      notebook_path: /Workspace/medallion_pipeline/notebooks/10_bronze_autoloader
+      base_parameters:
+        catalog: "{{job.parameters.catalog}}"
+        entity_filter: "{{job.parameters.entity_filter}}"
+    timeout_seconds: 3600
+    max_retries: 2
+    min_retry_interval_millis: 60000
+    retry_on_timeout: true
+
+  - task_key: silver_conformed
+    depends_on:
+      - task_key: bronze_ingestion
+    description: Conform, dedupe, quality rules, SCD1/SCD2 merges
+    notebook_task:
+      notebook_path: /Workspace/medallion_pipeline/notebooks/20_silver_conformed
+      base_parameters:
+        catalog: "{{job.parameters.catalog}}"
+        entity_filter: "{{job.parameters.entity_filter}}"
+    timeout_seconds: 3600
+    max_retries: 2
+    min_retry_interval_millis: 60000
+    retry_on_timeout: true
+
+  - task_key: gold_aggregates
+    depends_on:
+      - task_key: silver_conformed
+    description: Rebuild gold business tables (CLUSTER BY AUTO)
+    notebook_task:
+      notebook_path: /Workspace/medallion_pipeline/notebooks/30_gold_aggregates
+      base_parameters:
+        catalog: "{{job.parameters.catalog}}"
+    timeout_seconds: 1800
+    max_retries: 2
+    min_retry_interval_millis: 60000
+
+  - task_key: gold_materialized_views
+    depends_on:
+      - task_key: silver_conformed
+    description: Create/refresh gold materialized views on a serverless warehouse
+    sql_task:
+      file:
+        path: /Workspace/medallion_pipeline/notebooks/31_gold_materialized_views.sql
+      warehouse_id: REPLACE_WITH_SERVERLESS_WAREHOUSE_ID
+      parameters:
+        catalog: "{{job.parameters.catalog}}"
+    timeout_seconds: 1800
+    max_retries: 2
+    min_retry_interval_millis: 60000
+
+  - task_key: pipeline_health_check
+    depends_on:
+      - task_key: gold_aggregates
+      - task_key: gold_materialized_views
+    run_if: ALL_DONE
+    description: Summarise this run from the audit log; fails the job if any layer FAILED
+    notebook_task:
+      notebook_path: /Workspace/medallion_pipeline/notebooks/40_health_check
+      base_parameters:
+        catalog: "{{job.parameters.catalog}}"
+    timeout_seconds: 600
+    max_retries: 0
+
+queue:
+  enabled: true
+
+performance_target: STANDARD
+
+tags:
+  project: medallion_demo
+  layer: all
+  owner: data-platform
