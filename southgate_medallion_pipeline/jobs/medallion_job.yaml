@@ -6,7 +6,7 @@ description: >-
 
 email_notifications:
   on_failure:
-    - your.email@company.com
+    - sathya.gurukrishnan@au.ncs.co
   no_alert_for_skipped_runs: true
 
 notification_settings:
