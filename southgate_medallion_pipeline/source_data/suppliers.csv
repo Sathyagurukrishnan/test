@@ -1,0 +1,121 @@
+supplier_id,supplier_name,primary_category,city,state,lead_time_days,otif_score_pct,status
+SUPP0001,Pacific Wholesale Pty Ltd,Electronics,Newcastle,NSW,21,87.6,ACTIVE
+SUPP0002,National Trading Pty Ltd,Grocery,Canberra,ACT,26,86.7,ON_HOLD
+SUPP0003,National Imports Pty Ltd,Home & Garden,Canberra,ACT,24,94.3,ON_HOLD
+SUPP0004,National Imports Pty Ltd,Grocery,Perth,WA,7,98.2,ON_HOLD
+SUPP0005,Summit Imports Pty Ltd,Sports,Sydney,NSW,9,80.5,ACTIVE
+SUPP0006,Southern Trading Pty Ltd,Home & Garden,Sydney,NSW,25,81.3,ON_HOLD
+SUPP0007,Pacific Trading Pty Ltd,Electronics,Perth,WA,2,94.7,ACTIVE
+SUPP0008,Pacific Distribution Pty Ltd,Sports,Newcastle,NSW,42,99.2,ACTIVE
+SUPP0009,Metro Trading Pty Ltd,Sports,Gold Coast,QLD,9,81.1,ACTIVE
+SUPP0010,Summit Trading Pty Ltd,Home & Garden,Perth,WA,7,94.3,ACTIVE
+SUPP0011,National Distribution Pty Ltd,Home & Garden,Melbourne,VIC,5,94.3,ACTIVE
+SUPP0012,Summit Wholesale Pty Ltd,Home & Garden,Hobart,TAS,32,96.3,ON_HOLD
+SUPP0013,Prime Distribution Pty Ltd,Apparel,Darwin,NT,20,94.6,ON_HOLD
+SUPP0014,National Distribution Pty Ltd,Sports,Melbourne,VIC,2,81.6,ACTIVE
+SUPP0015,Southern Wholesale Pty Ltd,Sports,Adelaide,SA,14,93.9,ON_HOLD
+SUPP0016,Southern Distribution Pty Ltd,Grocery,Sydney,NSW,16,83.2,ON_HOLD
+SUPP0017,Metro Wholesale Pty Ltd,Apparel,Newcastle,NSW,34,92.7,ACTIVE
+SUPP0018,Metro Imports Pty Ltd,Home & Garden,Canberra,ACT,35,80.1,ON_HOLD
+SUPP0019,Metro Distribution Pty Ltd,Electronics,Adelaide,SA,5,81.2,ACTIVE
+SUPP0020,Pacific Wholesale Pty Ltd,Apparel,Wollongong,NSW,7,93.4,ON_HOLD
+SUPP0021,Pacific Trading Pty Ltd,Grocery,Darwin,NT,39,95.4,ACTIVE
+SUPP0022,Summit Wholesale Pty Ltd,Electronics,Wollongong,NSW,38,85.2,ACTIVE
+SUPP0023,Metro Supplies Pty Ltd,Grocery,Darwin,NT,33,86.0,ACTIVE
+SUPP0024,Prime Distribution Pty Ltd,Home & Garden,Hobart,TAS,39,83.4,ON_HOLD
+SUPP0025,National Supplies Pty Ltd,Apparel,Hobart,TAS,22,98.4,ACTIVE
+SUPP0026,National Supplies Pty Ltd,Home & Garden,Darwin,NT,11,94.7,ACTIVE
+SUPP0027,Pacific Distribution Pty Ltd,Grocery,Canberra,ACT,26,99.7,ON_HOLD
+SUPP0028,National Imports Pty Ltd,Electronics,Brisbane,QLD,29,95.7,ON_HOLD
+SUPP0029,Southern Wholesale Pty Ltd,Home & Garden,Brisbane,QLD,15,81.9,ACTIVE
+SUPP0030,Southern Imports Pty Ltd,Grocery,Darwin,NT,14,80.4,ACTIVE
+SUPP0031,Metro Wholesale Pty Ltd,Grocery,Brisbane,QLD,16,83.8,ON_HOLD
+SUPP0032,National Supplies Pty Ltd,Apparel,Wollongong,NSW,12,89.7,ON_HOLD
+SUPP0033,Metro Trading Pty Ltd,Electronics,Melbourne,VIC,22,94.0,ON_HOLD
+SUPP0034,Southern Distribution Pty Ltd,Sports,Adelaide,SA,33,96.0,ACTIVE
+SUPP0035,Pacific Imports Pty Ltd,Home & Garden,Darwin,NT,23,92.5,ON_HOLD
+SUPP0036,National Wholesale Pty Ltd,Electronics,Newcastle,NSW,40,82.6,ACTIVE
+SUPP0037,Summit Imports Pty Ltd,Home & Garden,Hobart,TAS,25,91.3,ACTIVE
+SUPP0038,Pacific Supplies Pty Ltd,Grocery,Sydney,NSW,28,84.9,ACTIVE
+SUPP0039,Southern Imports Pty Ltd,Apparel,Wollongong,NSW,19,91.0,ON_HOLD
+SUPP0040,Summit Distribution Pty Ltd,Home & Garden,Hobart,TAS,22,95.6,ON_HOLD
+SUPP0041,Summit Wholesale Pty Ltd,Sports,Perth,WA,17,96.2,ACTIVE
+SUPP0042,Prime Supplies Pty Ltd,Electronics,Darwin,NT,22,90.2,ACTIVE
+SUPP0043,Southern Wholesale Pty Ltd,Grocery,Canberra,ACT,7,90.5,ACTIVE
+SUPP0044,Summit Imports Pty Ltd,Electronics,Newcastle,NSW,30,87.8,ACTIVE
+SUPP0045,Summit Distribution Pty Ltd,Grocery,Adelaide,SA,5,89.4,ACTIVE
+SUPP0046,Pacific Imports Pty Ltd,Grocery,Gold Coast,QLD,41,89.6,ACTIVE
+SUPP0047,Metro Supplies Pty Ltd,Grocery,Adelaide,SA,40,97.6,ACTIVE
+SUPP0048,Southern Wholesale Pty Ltd,Sports,Gold Coast,QLD,9,85.9,ACTIVE
+SUPP0049,Southern Wholesale Pty Ltd,Sports,Wollongong,NSW,20,84.9,ACTIVE
+SUPP0050,Summit Trading Pty Ltd,Grocery,Canberra,ACT,18,84.1,ACTIVE
+SUPP0051,Pacific Supplies Pty Ltd,Electronics,Melbourne,VIC,25,89.3,ACTIVE
+SUPP0052,Summit Supplies Pty Ltd,Sports,Darwin,NT,12,91.8,ACTIVE
+SUPP0053,Metro Supplies Pty Ltd,Grocery,Sydney,NSW,14,94.1,ACTIVE
+SUPP0054,Southern Wholesale Pty Ltd,Home & Garden,Adelaide,SA,22,99.0,ACTIVE
+SUPP0055,Metro Wholesale Pty Ltd,Apparel,Melbourne,VIC,25,82.8,ON_HOLD
+SUPP0056,Prime Trading Pty Ltd,Apparel,Canberra,ACT,43,86.4,ACTIVE
+SUPP0057,Prime Trading Pty Ltd,Grocery,Hobart,TAS,22,91.3,ON_HOLD
+SUPP0058,Prime Trading Pty Ltd,Home & Garden,Melbourne,VIC,33,81.3,ACTIVE
+SUPP0059,Southern Trading Pty Ltd,Sports,Brisbane,QLD,12,98.7,ACTIVE
+SUPP0060,Metro Imports Pty Ltd,Grocery,Sydney,NSW,7,88.2,ACTIVE
+SUPP0061,National Wholesale Pty Ltd,Electronics,Darwin,NT,35,88.3,ACTIVE
+SUPP0062,Southern Wholesale Pty Ltd,Electronics,Wollongong,NSW,15,88.9,ACTIVE
+SUPP0063,Southern Distribution Pty Ltd,Electronics,Adelaide,SA,43,93.6,ACTIVE
+SUPP0064,Summit Distribution Pty Ltd,Apparel,Melbourne,VIC,4,80.8,ACTIVE
+SUPP0065,Southern Wholesale Pty Ltd,Grocery,Brisbane,QLD,22,87.7,ON_HOLD
+SUPP0066,National Trading Pty Ltd,Sports,Gold Coast,QLD,20,89.8,ON_HOLD
+SUPP0067,Summit Supplies Pty Ltd,Sports,Wollongong,NSW,6,80.8,ON_HOLD
+SUPP0068,Southern Distribution Pty Ltd,Sports,Melbourne,VIC,33,80.1,ON_HOLD
+SUPP0069,Prime Imports Pty Ltd,Sports,Sydney,NSW,12,87.9,ACTIVE
+SUPP0070,Pacific Wholesale Pty Ltd,Grocery,Geelong,VIC,19,91.1,ON_HOLD
+SUPP0071,Southern Distribution Pty Ltd,Sports,Canberra,ACT,18,86.7,ACTIVE
+SUPP0072,National Trading Pty Ltd,Grocery,Adelaide,SA,30,80.6,ON_HOLD
+SUPP0073,Summit Wholesale Pty Ltd,Apparel,Gold Coast,QLD,15,83.7,ACTIVE
+SUPP0074,Pacific Distribution Pty Ltd,Home & Garden,Canberra,ACT,38,94.6,ACTIVE
+SUPP0075,Summit Distribution Pty Ltd,Sports,Wollongong,NSW,21,87.2,ACTIVE
+SUPP0076,Summit Distribution Pty Ltd,Sports,Gold Coast,QLD,18,84.3,ACTIVE
+SUPP0077,Pacific Distribution Pty Ltd,Home & Garden,Adelaide,SA,23,84.1,ON_HOLD
+SUPP0078,Summit Imports Pty Ltd,Apparel,Canberra,ACT,27,92.0,ACTIVE
+SUPP0079,National Wholesale Pty Ltd,Sports,Darwin,NT,20,95.8,ON_HOLD
+SUPP0080,Pacific Wholesale Pty Ltd,Electronics,Perth,WA,2,97.0,ON_HOLD
+SUPP0081,Pacific Imports Pty Ltd,Electronics,Melbourne,VIC,21,88.9,ON_HOLD
+SUPP0082,Southern Trading Pty Ltd,Electronics,Newcastle,NSW,25,84.3,ACTIVE
+SUPP0083,Summit Imports Pty Ltd,Electronics,Canberra,ACT,19,88.3,ACTIVE
+SUPP0084,Pacific Trading Pty Ltd,Grocery,Adelaide,SA,11,85.2,ACTIVE
+SUPP0085,Summit Trading Pty Ltd,Apparel,Sydney,NSW,13,80.3,ACTIVE
+SUPP0086,Southern Supplies Pty Ltd,Sports,Wollongong,NSW,37,85.4,ACTIVE
+SUPP0087,Prime Supplies Pty Ltd,Electronics,Wollongong,NSW,11,84.3,ACTIVE
+SUPP0088,National Trading Pty Ltd,Electronics,Gold Coast,QLD,33,88.6,ACTIVE
+SUPP0089,Southern Trading Pty Ltd,Sports,Canberra,ACT,4,93.1,ACTIVE
+SUPP0090,Metro Supplies Pty Ltd,Home & Garden,Wollongong,NSW,19,80.5,ACTIVE
+SUPP0091,Southern Supplies Pty Ltd,Electronics,Perth,WA,43,80.9,ON_HOLD
+SUPP0092,Prime Supplies Pty Ltd,Home & Garden,Canberra,ACT,5,85.7,ACTIVE
+SUPP0093,Metro Supplies Pty Ltd,Apparel,Newcastle,NSW,36,83.3,ON_HOLD
+SUPP0094,Summit Wholesale Pty Ltd,Sports,Hobart,TAS,11,86.4,ON_HOLD
+SUPP0095,National Distribution Pty Ltd,Sports,Hobart,TAS,27,87.4,ACTIVE
+SUPP0096,Southern Supplies Pty Ltd,Sports,Adelaide,SA,28,87.2,ACTIVE
+SUPP0097,Prime Imports Pty Ltd,Home & Garden,Sydney,NSW,23,98.4,ON_HOLD
+SUPP0098,National Wholesale Pty Ltd,Home & Garden,Darwin,NT,4,86.8,ON_HOLD
+SUPP0099,Prime Imports Pty Ltd,Sports,Brisbane,QLD,42,96.6,ACTIVE
+SUPP0100,Southern Distribution Pty Ltd,Apparel,Newcastle,NSW,7,96.4,ACTIVE
+SUPP0101,Prime Trading Pty Ltd,Sports,Geelong,VIC,8,91.5,ACTIVE
+SUPP0102,Summit Distribution Pty Ltd,Home & Garden,Geelong,VIC,45,94.1,ACTIVE
+SUPP0103,Pacific Imports Pty Ltd,Grocery,Darwin,NT,37,98.6,ON_HOLD
+SUPP0104,National Distribution Pty Ltd,Sports,Gold Coast,QLD,24,94.9,ON_HOLD
+SUPP0105,Southern Supplies Pty Ltd,Home & Garden,Sydney,NSW,14,94.3,ON_HOLD
+SUPP0106,National Distribution Pty Ltd,Electronics,Sydney,NSW,21,84.8,ACTIVE
+SUPP0107,Southern Wholesale Pty Ltd,Electronics,Adelaide,SA,14,80.5,ACTIVE
+SUPP0108,Pacific Distribution Pty Ltd,Home & Garden,Adelaide,SA,45,81.4,ACTIVE
+SUPP0109,Pacific Supplies Pty Ltd,Grocery,Darwin,NT,44,88.0,ON_HOLD
+SUPP0110,Metro Imports Pty Ltd,Apparel,Newcastle,NSW,25,84.1,ACTIVE
+SUPP0111,Prime Supplies Pty Ltd,Sports,Newcastle,NSW,39,80.8,ACTIVE
+SUPP0112,National Imports Pty Ltd,Grocery,Melbourne,VIC,3,85.1,ACTIVE
+SUPP0113,Prime Trading Pty Ltd,Apparel,Canberra,ACT,39,92.3,ACTIVE
+SUPP0114,National Trading Pty Ltd,Apparel,Gold Coast,QLD,4,99.2,ACTIVE
+SUPP0115,Metro Wholesale Pty Ltd,Electronics,Darwin,NT,7,84.9,ON_HOLD
+SUPP0116,Pacific Supplies Pty Ltd,Apparel,Gold Coast,QLD,23,84.8,ACTIVE
+SUPP0117,Metro Imports Pty Ltd,Sports,Melbourne,VIC,30,84.3,ACTIVE
+SUPP0118,Pacific Distribution Pty Ltd,Sports,Sydney,NSW,45,95.5,ON_HOLD
+SUPP0119,Pacific Wholesale Pty Ltd,Home & Garden,Darwin,NT,31,85.5,ON_HOLD
+SUPP0120,Prime Trading Pty Ltd,Grocery,Canberra,ACT,39,82.3,ON_HOLD
